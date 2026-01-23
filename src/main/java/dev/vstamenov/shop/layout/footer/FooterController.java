@@ -1,0 +1,1 @@
+package dev.vstamenov.shop.layout.footer;
