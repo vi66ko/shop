@@ -1,4 +1,4 @@
-package dev.vstamenov.shop.utility;
+package dev.vstamenov.shop.model;
 
 public class Item {
 

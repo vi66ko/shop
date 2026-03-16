@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import dev.vstamenov.shop.utility.Item;
+import dev.vstamenov.shop.model.Item;
 
 public class Database {
 

@@ -7,12 +7,12 @@
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
-           <fx:include source="../leftSideNavigation/leftSideNavigation.fxml" />
+           <fx:include source="../view/layout/leftSideNavigation.fxml" />
          </children>
     </AnchorPane>
       <ScrollPane fx:id="mainContent" prefHeight="200.0" prefWidth="200.0" >
-          <fx:include source="../../single/item_card/card.fxml" />
-          <fx:include source="../../single/edithItem/edithItem.fxml" />
+          <fx:include source="../view/elements/item_card.fxml" />
+          <fx:include source="../view/elements/edithItem.fxml" />
       </ScrollPane>
   </items>
 </SplitPane>
