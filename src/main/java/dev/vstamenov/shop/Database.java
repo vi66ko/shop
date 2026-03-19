@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import dev.vstamenov.shop.model.Item;
+import dev.vstamenov.shop.model.User;
 
 public class Database {
 
@@ -104,4 +105,50 @@ public class Database {
     }
 
 
+//  Account managing
+
+    static User longin(String username, String password ){
+        String query = "SELECT * FROM users WHERE username = ? AND password = ?";
+
+        try (var connectin = DriverManager.getConnection(dataBaseURI)){
+            return new User("", username, password);
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public static boolean isUserExists(String name){
+        String query = "SELECT * FROM users WHERE name = ?";
+
+        try(var connection = DriverManager.getConnection(dataBaseURI);
+            var stmt = connection.prepareStatement(query)){
+
+            stmt.setString(1, name);
+            ResultSet resultSet = stmt.executeQuery();
+
+            return resultSet.next();
+
+        } catch (SQLException e){
+            System.err.println(e.getMessage());
+            return false;
+        }
+    }
+
+    public static boolean registerUser(User user){
+        String query = "INSERT INTO users(name, password) VALUES(?, ?)";
+
+        try(var conn = DriverManager.getConnection(dataBaseURI);
+            var stmt = conn.prepareStatement(query)) {
+
+            stmt.setString(1, user.getName());
+            stmt.setString(2, user.getPassword());
+            stmt.executeUpdate();
+            return true;
+
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+            return false;
+        }
+    }
 }
