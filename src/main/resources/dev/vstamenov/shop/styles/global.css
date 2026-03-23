@@ -3,3 +3,23 @@
     -fx-font-weight: 600;
     -fx-font-size: 16px;
 }
+
+
+/*
+------------------------
+ The Editable item card
+ */
+
+
+
+
+#cancelBtn,
+#saveBtn {
+    -fx-pref-width: 125;
+    -fx-alignment: center;
+}
+
+#editable_grid_card {
+    -fx-border-color: rgb(48, 48, 48);
+    -fx-border-width: 1px;
+}
