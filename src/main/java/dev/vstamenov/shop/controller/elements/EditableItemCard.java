@@ -38,7 +38,8 @@ public class EditableItemCard {
         String description = this.description.getText();
         String priceStr =  this.priceField.getText();
         String quantityStr = this.quantityField.getText();
-        String pictureUri = "";
+        String pictureUri = imageView.getImage().getUrl();
+
         final double rating = 0;
 
 

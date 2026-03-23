@@ -20,7 +20,7 @@
       <RowConstraints minHeight="30.0" prefHeight="60.0" vgrow="NEVER" />
    </rowConstraints>
    <children>
-      <ImageView fx:id="image" fitHeight="103.0" fitWidth="197.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+      <ImageView fx:id="imageView" fitHeight="103.0" fitWidth="197.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
          <image>
             <Image url="@../../images/placeholder.png" />
          </image>
@@ -36,7 +36,7 @@
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
          <children>
             <Label fx:id="ratingLabel" text="Rating:" />
-            <Label fx:id="ratingValue" layoutX="10.0" layoutY="10.0" text="23" />
+            <Label fx:id="ratingValue" layoutX="10.0" layoutY="10.0" text="placeholder" />
          </children>
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
