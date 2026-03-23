@@ -4,22 +4,32 @@ public class User {
     private int id;
     private String name;
     private String password;
-    private String role;
 
 
+
+    private String address;
+    private String phone;
+
+    // Constructor without id (used when creating a new item)
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
     // Constructor without id (used when creating a new item)
     public User(String name, String password, String role) {
         this.name = name;
         this.password = password;
-        this.role = role;
     }
 
-    // Constructor with id (used when loading from database)
-    public User(int id, String name, String password, String role) {
+    /** /
+     *  Constructor mainly used when loading from database
+    */
+    public User(int id, String name, String password, String address, String phone) {
         this.id = id;
         this.name = name;
         this.password = password;
-        this.role = role;
+        this.address = address;
+        this.phone = phone;
     }
 
     // Getters and setters
@@ -43,13 +53,18 @@ public class User {
         this.password = password;
     }
 
-    public String getRole() {
-        return role;
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public String getPhone() {
+        return phone;
     }
 
-
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }
