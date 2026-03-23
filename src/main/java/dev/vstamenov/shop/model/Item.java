@@ -4,28 +4,32 @@ public class Item {
 
     private int id;
     private String name;
+    private String description;
     private int quantity;
     private double price;
     private String pictureUri;
     private double rating;
+    private int userId;
 
     // Constructor without id (used when creating a new item)
-    public Item(String name, int quantity, double price, String pictureUri, double rating) {
+    public Item(String name, String description, int quantity, double price, String pictureUri, double rating) {
         this.name = name;
+        this.description = description;
         this.quantity = quantity;
+        this.rating = price;
         this.price = price;
         this.pictureUri = pictureUri;
-        this.rating = rating;
+
     }
 
     // Constructor with id (used when loading from database)
-    public Item(int id, String name, int quantity, double price, String pictureUri, double rating) {
+    public Item(int id, String name,String description, int quantity, double price, String pictureUri, double rating) {
         this.id = id;
         this.name = name;
+        this.description = description;
         this.quantity = quantity;
         this.price = price;
         this.pictureUri = pictureUri;
-        this.rating = rating;
     }
 
     // Getters and setters
@@ -40,6 +44,14 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getQuantity() {
@@ -73,4 +85,6 @@ public class Item {
     public void setRating(double rating) {
         this.rating = rating;
     }
+
+
 }

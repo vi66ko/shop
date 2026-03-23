@@ -1,1 +1,0 @@
-package dev.vstamenov.shop.controller.layout;

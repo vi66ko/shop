@@ -2,10 +2,8 @@
 
 # Features
 
-- [ ] login
-- [ ] roles
-  - [ ] client
-  - [ ] seller
+- [x] login
+- [x] register
 - [ ] Shopping page
 - [ ] search
 - [ ] filters
@@ -24,9 +22,6 @@
 - [ ] test
 - [ ] test
 
-Joke 
-popup - Do you have + 18 with a big red symbol then show normal stava
-
 
 # Design
 
@@ -37,27 +32,3 @@ popup - Do you have + 18 with a big red symbol then show normal stava
   - rating
   - price
 
-# Database 
-
-Structure
-
-users:
-- id
-- name
-- password
-- role
-
-purchases:
-- id
-- time of purchases
-- item id
-- buyer id
-- amount
-
-items:
-- id
-- name
-- quantity
-- price
-- picture uri
-- rating
