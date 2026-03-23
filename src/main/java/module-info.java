@@ -19,4 +19,7 @@ module dev.vstamenov.shop {
 
     opens dev.vstamenov.shop to javafx.fxml;
     exports dev.vstamenov.shop;
+    exports dev.vstamenov.shop.controller.layout;
+    opens dev.vstamenov.shop.controller.elements to javafx.fxml;
+
 }
