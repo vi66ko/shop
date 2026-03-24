@@ -35,9 +35,12 @@ public class ItemCard {
         this.description.setText(item.getDescription());
         this.price.setText(String.valueOf(item.getPrice()));
         this.available.setText(String.valueOf(item.getQuantity()));
-        // To check if the value is zero then display not rated
-        this.ratingLabel.setText(String.valueOf(item.getRating()));
 
+        if(item.getRating() == 0){
+            this.ratingValue.setText("Not rated yet");
+        } else {
+            this.ratingValue.setText(String.valueOf(item.getRating()));
+        }
 
     }
 

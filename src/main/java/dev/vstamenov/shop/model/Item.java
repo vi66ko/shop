@@ -30,6 +30,7 @@ public class Item {
         this.quantity = quantity;
         this.price = price;
         this.pictureUri = pictureUri;
+        this.rating = rating;
     }
 
     // Getters and setters
