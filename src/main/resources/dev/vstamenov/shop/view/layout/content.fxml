@@ -11,7 +11,7 @@
            <fx:include source="leftSideNavigation.fxml" />
          </children>
     </AnchorPane>
-      <ScrollPane fx:id="content" fitToWidth="true">
+        <ScrollPane fx:id="content" fitToHeight="true" fitToWidth="true">
           <fx:include source="../elements/editable_item_card.fxml" />
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
