@@ -62,8 +62,8 @@ public class LeftSideNavigation {
     public void allSells(ActionEvent actionEvent) {
         ArrayList<Item> items =  Database.getAllItems();
         FlowPane listContainer = new FlowPane();
-        listContainer.setHgap(10);
-        listContainer.setVgap(10);
+        listContainer.setHgap(20);
+        listContainer.setVgap(20);
 
         for (Item item : items) {
             try {
