@@ -20,8 +20,11 @@ public class ItemRow {
     @FXML private Label quantityLabel;
 
     public void setItem(Item item) {
+        String description = item.getDescription();
+        String truncatedDescription = description.length() > 39 ? description.substring(0, 39) : description;
+
         nameLabel.setText(item.getName());
-        descLabel.setText(item.getDescription());
+        descLabel.setText(truncatedDescription);
         priceLabel.setText("$" + item.getPrice());
         quantityLabel.setText(String.valueOf(item.getQuantity()));
     }
