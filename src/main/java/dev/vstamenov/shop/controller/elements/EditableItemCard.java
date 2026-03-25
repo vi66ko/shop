@@ -39,6 +39,7 @@ public class EditableItemCard {
         String priceStr =  this.priceField.getText();
         String quantityStr = this.quantityField.getText();
         String pictureUri = imageView.getImage().getUrl();
+        pictureUri = pictureUri.substring(pictureUri.lastIndexOf("/") + 1); // saving only the filename
 
         final double rating = 0;
 

@@ -1,5 +1,6 @@
 package dev.vstamenov.shop.controller.elements;
 
+import dev.vstamenov.shop.App;
 import dev.vstamenov.shop.model.Item;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -30,7 +31,7 @@ public class ItemCard {
     public void setItem(Item item) {
         // Set upt the image if there is not image a
 
-        this.imageView.setImage(new Image(item.getPictureUri()));
+        this.imageView.setImage(new Image(App.class.getResourceAsStream("images/" + item.getPictureUri())));
         this.title.setText(item.getName());
         this.description.setText(item.getDescription());
         this.price.setText(String.valueOf(item.getPrice()));
