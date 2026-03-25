@@ -68,7 +68,7 @@ public class LoginController {
     }
 
     public void initialize(){
-        Platform.runLater(() -> autoLogin());
+//        Platform.runLater(() -> autoLogin());
     }
 
     public void autoLogin(){
