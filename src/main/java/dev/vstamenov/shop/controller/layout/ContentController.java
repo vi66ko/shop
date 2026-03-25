@@ -25,6 +25,10 @@ public class ContentController {
         }
     }
 
+    /***
+     * Using polymorphisms helps me to use any container or elements
+     * because all of them have a parent Node
+     */
     public void setContentByNode(Node node) {
         getContent().setContent(node);
     }
