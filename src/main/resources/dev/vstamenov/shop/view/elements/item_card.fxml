@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="grid_card" fx:controller="dev.vstamenov.shop.controller.elements.ItemCard" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../styles/card.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:id="grid_card" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../styles/card.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.vstamenov.shop.controller.elements.ItemCard">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -42,7 +42,7 @@
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </padding>
       </HBox>
-      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
          <children>
 <!--            <VBox prefHeight="200.0" prefWidth="100.0">-->
 <!--               <children>-->
@@ -50,7 +50,7 @@
 <!--                  <HBox fx:id="categoriesContainer" prefHeight="100.0" prefWidth="200.0" />-->
 <!--               </children>-->
 <!--            </VBox>-->
-            <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+            <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="380.0" />
          </children>
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
@@ -82,7 +82,7 @@
                   <TextField fx:id="quantityField" prefHeight="26.0" prefWidth="60.0" />
                </children>
             </HBox>
-            <Button fx:id="addToBasket" onAction="#addToBasket" mnemonicParsing="false" text="add to basket" />
+            <Button fx:id="addToBasket" mnemonicParsing="false" onAction="#addToBasket" text="add to basket" />
          </children>
       </HBox>
    </children>
