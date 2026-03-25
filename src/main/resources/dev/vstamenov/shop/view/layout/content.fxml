@@ -12,11 +12,11 @@
          </children>
     </AnchorPane>
         <ScrollPane fx:id="content" fitToHeight="true" fitToWidth="true">
-          <fx:include source="../elements/editable_item_card.fxml" />
+          <fx:include source="../elements/greetings.fxml" />
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </padding>
-<!--          <fx:include source="elements/item_card.fxml" />-->
+
       </ScrollPane>
   </items>
 </SplitPane>
